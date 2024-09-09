@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h2>Welcome Page</h2>
+
+    <!-- Display the user's email -->
+    <p th:text="'Welcome, ' + ${email} + '!'"></p>
+
+    <p th:text="${message}"></p>
+</body>
+</html>

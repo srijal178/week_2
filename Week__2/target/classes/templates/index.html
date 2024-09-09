@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>School Management System - Student Records</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h2>Registration Page</h2>
+
+    <form th:action="@{/register}" method="post">
+        <label for="firstname"> Firstname:</label>
+        <input type="text" name="fname" required/><br>
+
+        <label for="lastname"> Lastname:</label>
+        <input type="text" name="lname" required/><br>
+
+        <label for="email"> Email:</label>
+        <input type="email" name="email" required/><br>
+
+        <label for="dob"> DoB:</label>
+        <input type="date" name="dob" required/><br>
+
+        <label for="password"> Password:</label>
+        <input type="password" name="passwd" required/><br>
+
+        <label for="gender"> Gender:</label>
+        <select name="gender">
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>        
+        </select><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
